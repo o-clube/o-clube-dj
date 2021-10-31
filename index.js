@@ -15,7 +15,7 @@ const client = new Client({intents: [Intents.FLAGS.GUILDS,
 
 const nodes = [
   {
-    host: "localhost",
+    host: process.env.LAVALINK_HOST,
     password: process.env.LAVALINK_PASSWORD,
     port: 2333,
   }
